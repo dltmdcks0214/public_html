@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#E8EDF2"/>
+  <rect x="20" y="20" width="560" height="360" fill="none" stroke="#C3D2E0" stroke-width="1.5"/>
+  <text x="50" y="80" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#2E5575" letter-spacing="1">팀 프로젝트 · 경영학</text>
+  <text x="50" y="160" font-family="-apple-system, sans-serif" font-size="24" font-weight="700" fill="#33312D">대학 상권 분석</text>
+  <text x="50" y="200" font-family="-apple-system, sans-serif" font-size="20" font-weight="500" fill="#665F56">로컬 브랜딩 마케팅 전략</text>
+  <line x1="50" y1="240" x2="180" y2="240" stroke="#2E5575" stroke-width="2"/>
+  <text x="50" y="330" font-family="-apple-system, sans-serif" font-size="13" fill="#8A8277">한림대학교 21학번 이승찬</text>
+</svg>

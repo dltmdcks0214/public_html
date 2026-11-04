@@ -1,1 +1,133 @@
-빛과 어둠
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Archive — 이승찬의 대학생활 아카이브</title>
+  <meta name="description" content="한림대학교 21학번 이승찬의 국어국문학·경영학 과제, 팀 프로젝트, 데이터 분석 기록 아카이브">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. 상단 헤더 -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand-logo">Campus Archive</a>
+      <nav class="site-nav">
+        <a href="#about" class="nav-link">소개</a>
+        <a href="#projects" class="nav-link">프로젝트</a>
+        <a href="#contact" class="nav-link">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. 소개 섹션 -->
+    <section id="about" class="section about-section">
+      <div class="container narrow">
+        <span class="eyebrow">한림대학교 21학번 이승찬</span>
+        <h1 class="main-title">배움과 사유의 과정을<br>기록하는 공간</h1>
+        <p class="intro-lead">
+          대학생활의 배움과 프로젝트를 기록하는 아카이브입니다.
+        </p>
+        <p class="intro-body">
+          본전공인 <strong>국어국문학과</strong>에서 언어와 텍스트의 맥락적 구조를 탐구하고, 부전공인 <strong>경영학과</strong>에서 시장 분석과 전략적 기획을 공부하고 있습니다. 강의실 안팎에서 마주한 과제와 팀 프로젝트, 그리고 데이터와 AI를 활용한 실습 결과물을 단정하게 모아 공유합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. 프로젝트 섹션 -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">프로젝트 아카이브</h2>
+          <p class="section-desc">분야를 선택하거나 키워드로 검색해 학업 결과물을 확인하세요.</p>
+        </div>
+
+        <!-- 검색, 필터, 정렬 컨트롤러 -->
+        <div class="controls-wrapper">
+          <div class="search-sort-row">
+            <div class="search-box">
+              <label for="search-input" class="sr-only">프로젝트 검색</label>
+              <input
+                type="search"
+                id="search-input"
+                placeholder="제목 또는 설명 검색..."
+                autocomplete="off"
+              >
+            </div>
+            <div class="sort-box">
+              <label for="sort-select" class="sort-label">정렬</label>
+              <select id="sort-select">
+                <option value="latest">최신순</option>
+                <option value="oldest">오래된순</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 분야별 필터 버튼 -->
+          <div class="filter-tabs" role="tablist" aria-label="분야별 필터">
+            <button type="button" class="filter-btn active" data-category="all">전체</button>
+            <button type="button" class="filter-btn" data-category="course">수업 과제</button>
+            <button type="button" class="filter-btn" data-category="team">팀 프로젝트</button>
+            <button type="button" class="filter-btn" data-category="ai-data">데이터·AI·개발</button>
+            <button type="button" class="filter-btn" data-category="etc">기타</button>
+          </div>
+        </div>
+
+        <!-- 결과 개수 -->
+        <div class="results-meta">
+          <span id="results-count" class="results-count">전체 3개</span>
+        </div>
+
+        <!-- 프로젝트 카드 그리드 -->
+        <div id="projects-container" class="projects-grid">
+          <!-- script.js에서 카드가 렌더링됩니다 -->
+        </div>
+
+        <!-- 검색 결과 없음 안내 -->
+        <div id="no-results" class="no-results" hidden>
+          <p class="no-results-title">검색 결과가 없습니다.</p>
+          <p class="no-results-desc">검색어를 바꾸거나 필터를 전체로 되돌려 보세요.</p>
+          <button type="button" id="reset-filter-btn" class="btn-text">필터 초기화</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 연락처 섹션 -->
+    <section id="contact" class="section contact-section">
+      <div class="container narrow">
+        <h2 class="section-title">연락처</h2>
+        <p class="contact-desc">
+          아카이브에 등록된 프로젝트 자료, 학업 협업, 기타 문의가 있으시다면 편하게 연락해 주세요.
+        </p>
+        <div class="contact-card">
+          <div class="contact-item">
+            <span class="contact-label">이메일</span>
+            <a href="mailto:contact.seungchan.lee@example.com" class="contact-link">
+              contact.seungchan.lee@example.com
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+              github.com/seungchan-lee
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. 푸터 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">&copy; 2026 이승찬 (Lee Seungchan). All rights reserved.</p>
+      <p class="affiliation">한림대학교 국어국문학과(전공) · 경영학과(부전공)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
